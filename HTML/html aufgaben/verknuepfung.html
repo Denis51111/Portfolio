@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>UFC Pound-for-Pound Top 5</title>
+    <link rel="stylesheet" href="ufc.css">
+</head>
+<body>
+<header>
+    <h1>UFC Pound-for-Pound Top 5 (Männer)</h1>
+    <p>Ich mag MMA — hier sind aktuell die Top 5 P4P-Fighter der UFC.</p>
+    <button id="darkModeToggle">Dark Mode</button>
+</header>
+
+<main>
+    <ol class="p4p-list">
+        <li><strong>Islam Makhachev</strong></li>
+        <li><strong>Ilia Topuria</strong></li>
+        <li><strong>Khamzat Chimaev</strong></li>
+        <li><strong>Alex Pereira</strong></li>
+        <li><strong>Alexander Volkanovski</strong></li>
+    </ol>
+</main>
+
+<footer>
+    <p>Stand: Dezember 2025</p>
+</footer>
+
+<script>
+    const toggleButton = document.getElementById('darkModeToggle');
+
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+
+
+        if(document.body.classList.contains('dark-mode')) {
+            toggleButton.textContent = 'Light Mode';
+        } else {
+            toggleButton.textContent = 'Dark Mode';
+        }
+    });
+</script>
+</body>
+</html>

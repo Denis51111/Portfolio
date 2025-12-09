@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>COOL</title>
+    <link rel="stylesheet" href="websitestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<button id="darkModeToggle">🌙 Dark Mode</button>
+
+<header class="hero">
+    <h1 class="title">Meine Webseite – WOW!</h1>
+    <p class="subtitle">Ich bin Denis – ich trainiere MMA – ich bin cool 😎🤑</p>
+</header>
+
+<section class="card">
+    <h2>Liste meiner Lieblingsorte</h2>
+    <ul>
+        <li>Bosnien</li>
+        <li>Dagestan</li>
+        <li>Dulliken</li>
+    </ul>
+</section>
+
+<section class="card">
+    <img class="profilbild" src="d89b1470-6a96-46f4-ba97-3d44b36d3520.jpg" alt="Ich" />
+    <a class="btn" href="https://aka-aarburg.ch/">AKA Website</a>
+    <a class="btn secondary" href="verknuepfung.html">GUT GUT</a>
+</section>
+
+<section class="card">
+    <img class="profilbild" src="GettyImages-2246910193-1024x683.jpg" alt="Islam Makhachev">
+    <h2>ISLAM MAKHACHEV – KING!</h2>
+</section>
+
+
+<script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</body>
+</html>

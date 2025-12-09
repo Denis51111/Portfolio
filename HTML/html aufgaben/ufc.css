@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --header-color: #1c1c1c;
+    --subtext-color: #555;
+    --list-bg: #fff;
+    --list-border: #ddd;
+    --footer-color: #777;
+    --shadow-color: rgba(0,0,0,0.1);
+}
+
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-color: #fff;
+    --subtext-color: #bbb;
+    --list-bg: #1e1e1e;
+    --list-border: #333;
+    --footer-color: #999;
+    --shadow-color: rgba(0,0,0,0.5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--header-color);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--subtext-color);
+}
+
+.p4p-list {
+    list-style: decimal inside;
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--list-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.p4p-list li {
+    padding: 10px 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--list-border);
+    transition: border-color 0.3s;
+}
+
+.p4p-list li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--footer-color);
+    transition: color 0.3s;
+}
+
+
+#darkModeToggle {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #e0e0e0;
+    color: #121212;
+}

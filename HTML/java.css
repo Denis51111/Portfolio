@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, sans-serif;
+    width: 400px;
+    margin: 40px auto;
+}
+
+#todoInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.done span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Filter-Button-Styling */
+.filters button {
+    margin-right: 10px;
+    padding: 6px 10px;
+}
+
+.hidden {
+    display: none;
+}

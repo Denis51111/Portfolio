@@ -79,8 +79,8 @@ li:hover {
 }
 
 .done {
-    background: #e9f5e9  !important;
-    border-color: #c6e5c6 !important;
+    background: #e9f5e9  ;
+    border-color: #c6e5c6 ;
 }
 
 .done span {
